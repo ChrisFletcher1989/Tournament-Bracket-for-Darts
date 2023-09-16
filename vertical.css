@@ -6,6 +6,7 @@
     position: absolute;
     display: flex;
     flex-direction: row;
+
 }
 a {
     color: red;
@@ -50,7 +51,6 @@ a {
     /* justify-content: space-around; */
     justify-content: space-around;
     flex-direction: column;
-    margin-top: 0px;
 
 }
 .round {
@@ -76,6 +76,7 @@ a {
     margin: 10px;
     border-radius: 40px;
     border-bottom-right-radius:0px;
+    margin-bottom: -5px;
 }
 .box:nth-child(even) {
     background: linear-gradient(#E3292E 0%, black 20%, black 80%, #E3292E 100%);
@@ -85,6 +86,8 @@ a {
     margin: 10px;
     border-radius: 40px;
     border-top-right-radius:0px;
+    margin-top: -5px;
+
 
 }
 
