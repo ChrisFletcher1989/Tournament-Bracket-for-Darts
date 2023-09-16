@@ -65,9 +65,9 @@ a {
 .box {
     background: linear-gradient(#309F6A 0%, white 20%, white 80%,#309F6A 100%);
     padding:6px;
-    height: 60px;
-    width: 200px;
-    margin: 10px;
+    height: 30x;
+    width: 140px;
+    margin: 8px;
     margin-right: 0px;
     border-radius: 25px;
     border-bottom-right-radius:0px;
@@ -76,9 +76,9 @@ a {
 .box:nth-child(even) {
     background: linear-gradient(#E3292E 0%, black 20%, black 80%, #E3292E 100%);
     padding:6px;
-    height: 60px;
-    width: 200px;
-    margin: 10px;
+    height: 30x;
+    width: 140px;
+    margin: 8px;
     margin-left: 0px;
     border-radius: 40px;
     border-bottom-left-radius:0px;
