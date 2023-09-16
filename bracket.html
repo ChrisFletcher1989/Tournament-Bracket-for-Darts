@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Your description here" />
+  <title>Layout Master</title>
+  <link rel="stylesheet" type="text/css" href="bracket.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+  <nav class="zone black sticky banner">
+Darts Tournament Bracket Creator  </nav>
+
+  <div class="wrapper">
+    <div class="players">
+      Please choose the number of player names then add their bames below
+      <fieldset class="noMargin">
+        <div class="dropdown">
+          <button class="dropbtn">Number of competitors</button>
+          <div class="dropdown-content">
+            <select id="competitors" name="competitors" class="dropbtn">
+              <option value="" disabled selected>Choose</option>
+              <option value="4" class="option">4</option>
+              <option value="8" class="option">8</option>
+              <option value="16" class="option">16</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class= playerNames id="playerNames">
+        <br>
+      </fieldset>
+      <button ID="randomise" class="randomise">Randomise</button>
+      <button ID="generatePDF" class="randomise">Print PDF</button>
+
+
+    </div>
+    <div id="first" class="zone gray first"></div>
+    <div id=second class="zone gray second"></div>
+    <div id=third class="zone gray third"></div>
+    <div id=fourth class="zone gray fourth"></div>
+    <div id=fifth class="zone gray fifth"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script type="text/javascript" src="bracket.js"></script>
+
+</body>
+</html>
