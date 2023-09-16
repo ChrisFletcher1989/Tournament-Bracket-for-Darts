@@ -10,7 +10,9 @@
     color: #00FF00;
     text-align: center;
 }
-
+a {
+    color: red;
+}
 .players{
     margin:0px;
     margin-top:40px;
