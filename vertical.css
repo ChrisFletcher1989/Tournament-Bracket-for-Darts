@@ -48,7 +48,6 @@ a {
 }
 .first {
     display: flex;
-    /* justify-content: space-around; */
     justify-content: space-around;
     flex-direction: column;
 
@@ -61,7 +60,7 @@ a {
 }
     .wrapper, .box, .playerName {
         color: red ;
-        font-size: 0.55em;
+        font-size: 0.45em;
     }
     .wrapper, .box2, .playerName {
         color: red ;
@@ -71,22 +70,22 @@ a {
 .box {
     background: linear-gradient(#309F6A 0%, white 20%, white 80%,#309F6A 100%);
     padding:6px;
-    height: 60px;
-    width: 200px;
-    margin: 10px;
+    height: 30x;
+    width: 140px;
+    margin: 8px;
     border-radius: 40px;
     border-bottom-right-radius:0px;
-    margin-bottom: -5px;
+    margin-bottom: 0px;
 }
 .box:nth-child(even) {
     background: linear-gradient(#E3292E 0%, black 20%, black 80%, #E3292E 100%);
     padding:6px;
-    height: 60px;
-    width: 200px;
-    margin: 10px;
+    height: 30x;
+    width: 140px;
+    margin: 8px;
     border-radius: 40px;
     border-top-right-radius:0px;
-    margin-top: -5px;
+    margin-top: 0px;
 
 
 }
