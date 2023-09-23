@@ -2,8 +2,8 @@ let player= document.getElementsByClassName("playerLabel")
 let box= document.getElementsByClassName("box")
 let option= document.getElementsByClassName("option")
 let randomise= document.getElementById("randomise")
-let printPDF=document.getElementById("generatePDF")
 let numberOfPlayers=document.getElementById("competitors")
+let printPDF=document.getElementById("generatePDF")
 let inputElements = document.querySelectorAll(".newPlayers"); 
 let addPlayers = () =>{
     let a = numberOfPlayers.value
@@ -14,6 +14,8 @@ let addPlayers = () =>{
         third.innerHTML = "";
         fourth.innerHTML = "";
         fifth.innerHTML = "";
+        fifth.innerHTML = "";
+
 
   for (let i = 1; i <= a; i++) {
     let newPlayer = document.createElement("input");
@@ -84,6 +86,19 @@ let addPlayers = () =>{
         fifth.appendChild(bracket)
 }
     }
+    a=a/2
+    console.log("New A ", a)
+    if(a>=1){
+        for (let i = 1; i <= a; i++) {
+        let bracket = document.createElement("div");
+        bracket.setAttribute("class", "box"); 
+        let paragraph = document.createElement("p");
+        paragraph.setAttribute("class", "playerLabel")
+        paragraph.textContent = "Winner of round 5 G" + i;
+        bracket.appendChild(paragraph);    
+        sixth.appendChild(bracket)
+}
+    }
 }
 let addNames = () => {
     let names = [];
@@ -105,10 +120,12 @@ let addNames = () => {
         game+=0.5
     }
   };
-function printFunction(){
+  function printFunction(){
     window.print()
   }
   
-    printPDF.addEventListener("click", printFunction);
     numberOfPlayers.addEventListener("click", addPlayers);
     randomise.addEventListener("click", addNames);
+    printPDF.addEventListener("click", printFunction);
+
+
