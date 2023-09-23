@@ -109,6 +109,6 @@ function printFunction(){
     window.print()
   }
   
-    numberOfPlayers.addEventListener("click", addPlayers);
+    printPDF.addEventListener("click", printFunction);
     numberOfPlayers.addEventListener("click", addPlayers);
     randomise.addEventListener("click", addNames);
