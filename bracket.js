@@ -2,6 +2,7 @@ let player= document.getElementsByClassName("playerLabel")
 let box= document.getElementsByClassName("box")
 let option= document.getElementsByClassName("option")
 let randomise= document.getElementById("randomise")
+let printPDF=document.getElementById("generatePDF")
 let numberOfPlayers=document.getElementById("competitors")
 let inputElements = document.querySelectorAll(".newPlayers"); 
 let addPlayers = () =>{
@@ -104,15 +105,10 @@ let addNames = () => {
         game+=0.5
     }
   };
+function printFunction(){
+    window.print()
+  }
   
     numberOfPlayers.addEventListener("click", addPlayers);
+    numberOfPlayers.addEventListener("click", addPlayers);
     randomise.addEventListener("click", addNames);
-
-
-//create new box for competitors x input
-//a=input
-//a=input/2 and make second box for input. innerhtml = "Winner of round 1 G" + input[i+1]
-//a=inout/2 and if input>=2 create third
-//again for 4th etc
-// when randomise is pressed, add all name inputs to an array
-//randomize the array. Loop through it, add ith value to ith box of "first" div. Pop it from the array.
