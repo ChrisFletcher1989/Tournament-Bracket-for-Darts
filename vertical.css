@@ -26,6 +26,11 @@ a {
     text-align: center;
     width: 100%;
     font-size: 2em;
+    color: red;
+}
+.info {
+    font-size: 0.5em;
+
 }
 .playerLabel{
     font-size: 0.8em;
